@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+      <p class="subtitle">
+        Напишите запрос в форме снизу
+      </p>
+      <form class="form" method="post">
+	      <div class="field">
+		      <input class="input" name="query" type="text" placeholder="100 километров в метрах" value="{{ query or '' }}"/>
+	      </div>
+	      <div class="field">
+		      <input type="submit" class="button is-success" value="Посчитать"/>
+	      </div>
+      </form>
+{% if result %}
+<p><b>Ответ: </b>{{ result }}</p>
+{% endif %}
+{% endblock %}
