@@ -52,5 +52,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=7080)
+    app.run(port=7080)
 
